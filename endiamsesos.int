@@ -1,0 +1,21 @@
+0: begin_block main_armstrong _ _ 
+1: in num _ _ 
+2: := num _ temp 
+3: < temp 0 5 
+4: jump _ _ 14 
+5: / temp 10 T_1 
+6: := T_1 _ digit 
+7: * digit digit T_2 
+8: * T_2 digit T_3 
+9: + sum T_3 T_4 
+10: := T_4 _ sum 
+11: / temp 10 T_5 
+12: := T_5 _ temp 
+13: jump _ _ 3 
+14: = num 0 16 
+15: jump _ _ 18 
+16: out num _ _ 
+17: jump _ _ 19 
+18: out num _ _ 
+19: halt _ _ _ 
+20: end block main_armstrong _ _ 
